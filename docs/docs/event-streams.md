@@ -146,7 +146,7 @@ A set of event streams can also be merged together.
 | :----------- | :--------------------------------------------: | :------------ |
 | merge        | {% include array t="[EventStream](#object)" %} | {% include required %} An array of event streams to merge into a single stream.|
 
-For example:
+For example: To capture either `mousedown` or `touchstart` event on a `symbol`
 
 ```json
 {
@@ -209,7 +209,7 @@ To merge event streams, simply use multiple selectors separated by commas.
 
 `selector1, selector2, ...`
 
-For example, to capture both mousedown and touchstart events on path marks:
+For example, to capture either mousedown or touchstart events on path marks:
 
 `path:mousedown, path:touchstart`
 
